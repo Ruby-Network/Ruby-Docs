@@ -1,4 +1,6 @@
-# Docker images for proxies
+# Docker
+
+Docker images for proxies
 
 ## First you need to have docker and docker-compose installed
 
@@ -55,7 +57,6 @@ first run this command
 ```bash
 mkdir -p ~/docker-images/ && \
 cd ~/docker-images/ && \
-mkdir -p incognito/ && \
 mkdir -p hypertabs/ && \
 mkdir -p ludicrous/ && \
 mkdir -p website-aio/ && \
@@ -67,55 +68,9 @@ mkdir -p ruby/
 
 Note you don't need to create all of the directories, just the ones you want to use
 
-## Incognito
-
-Access the world wide web with Incognito, a fast and rather fancy proxy service. Enjoy a more private internet session without ads. The second largest scaling proxy service in [Titanium Network](https://discord.gg/unblock)
-
-getting started
-
-First we want to cd into the directory by doing this command:
-
-```bash
-cd ~/docker-images/incognito/
-```
-
-Now lets make the docker-compose.yml file
-
-```bash
-nano docker-compose.yml
-```
-
-now copy and paste this into the file
-
-```yaml
-version: "2"
-services:
-  incognito:
-    restart: unless-stopped
-    image: "ghcr.io/ruby-network/incognito-docker"
-    ports:
-      #IMPORTANT: DO NOT CHANGE THE 8080 PART ONLY CHANGE THE <your port here> PART
-      - <your port here>:8080
-# network config if you want a network config feel free to use the one below and change the name to your liking.YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
-#networks:
-#  default:
-#    external:
-#      name: default
-```
-
-Save the file and exit
-
-Now we can run the container
-
-```bash
-docker-compose up -d
-```
-
 ## Hypertabs
 
 An incredible browser-themed web proxy service.
-
-Now we just do what we did for incognito but we need to change a few commands
 
 ```bash
 cd ~/docker-images/hypertabs/
