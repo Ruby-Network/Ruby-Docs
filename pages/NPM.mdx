@@ -2,7 +2,9 @@
 
 [Nginx Proxy Manager](https://nginxproxymanager.com/) (NPM). This is a docker container that will allow us to easily manage our Nginx instances. We will be using this to add SSL to our site as well as to proxy our site to our domain.
 
-Assuming you are running a Linux system based off of Debian, run the following command to install some prerequisites:
+Assuming you are running a Linux system based off of Ubuntu, run the following command to install some prerequisites:
+
+Note if you are running a different distro of Linux you can find the instructions [here](https://docs.docker.com/engine/install/)
 
 ```bash
 $ sudo apt install -y apt-transport-https ca-certificates curl software-properties-common nano curl wget
@@ -11,7 +13,7 @@ $ sudo apt install -y apt-transport-https ca-certificates curl software-properti
 Then, add the GPG keys
 
 ```bash
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
 After which add the Docker repository

@@ -1,34 +1,18 @@
 <div align="center">
 
-{" "}
+[![Banner](https://socialify.git.ci/ruby-network/ruby/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)](https://github.com/Ruby-Network/ruby)
 
-<img
-  src="https://socialify.git.ci/ruby-network/ruby/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark"
-  alt="ruby"
-  width="640"
-  height="320"
-/>
+[![Build](https://img.shields.io/github/actions/workflow/status/ruby-network/ruby/docker-build.yml?style=for-the-badge)]()
 
-{" "}
+[![Repo Size](https://img.shields.io/github/repo-size/ruby-network/ruby?style=for-the-badge)](https://github.com/Ruby-Network/ruby)
 
-<img
-  alt="build"
-  src="https://img.shields.io/github/actions/workflow/status/ruby-network/ruby/docker-build.yml?style=for-the-badge"
-/>
+[![Commits a Week](https://img.shields.io/github/commit-activity/w/ruby-network/ruby?style=for-the-badge)](https://github.com/Ruby-Network/ruby/commits)
 
-{" "}
+[![Website Status](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Frubynetwork.tech)](https://rubynetwork.tech)
 
-<img
-  alt="repo size"
-  src="https://img.shields.io/github/repo-size/ruby-network/ruby?style=for-the-badge"
-/>
-
-  <tab></tab>
-  
-  <img alt="website status" src="https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Frubynetwork.tech" />
 </div>
-
 <div align="center">
+
   <h2>Get Started</h2>
   <a>To get started, press one of the buttons below to deploy Ruby</a>
 <center>
@@ -51,14 +35,28 @@
 
 Or
 
-## Self Hosting Via Terminal
+[![Deploy on Terminal](https://img.shields.io/badge/terminal-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)](./Ruby#installation)
+
+[![Deploy on Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](./Ruby#docker-installation)
+
+## NOTE:
+
+- For Cyclic users this will **NOT** work as it is too big
+- This will **NOT** deploy on Github Pages, Netlify, Vercel, Gitlab Pages or any other _static_ host
+
+---
+
+This is our second edition of [Ruby](https://github.com/ruby-network/ruby-v1). This edition focuses on speed and more features.
+
+[![Ruby Network Discord](https://invidget.switchblade.xyz/hzCjSFQeeZ?theme=dark)](https://discord.gg/hzCjSFQeeZ)
 
 ### Requirements
 
 - [Node.js](https://nodejs.org/en/)
 - [Git](https://git-scm.com/downloads)
 - [Yarn](https://yarnpkg.com/getting-started/install)
-- [NPM](https://www.npmjs.com/get-npm) (if you don't have yarn)
+- [NPM](https://www.npmjs.com/get-npm)
+- (if you don't have yarn)
 
 ## Installation
 
@@ -128,7 +126,6 @@ services:
 $ curl https://raw.githubusercontent.com/Ruby-Network/ruby/main/docker-compose.yml > docker-compose.yml
 ```
 
-- Change `<your port here>` to the port you want to use removing the `<>` around it.
 - Run the docker-compose file
 
 ```bash
@@ -195,16 +192,16 @@ Need to use a custom network? Uncomment the networks section and change the name
 ## Features
 
 - Tons of themes (you can even make your own)
-- We preload everything so you don't have to wait for the page to load
+
+- We prefetch everything to speed up your experience
+
 - Multiple Proxy Backends:
 
   - [Ultraviolet](https://github.com/titaniumnetwork-dev/ultraviolet)
   - [Dynamic Interception Proxy (DIP)](https://github.com/Dynamic-Interception-Proxy/DIP)
   - [Osana](https://github.com/nebulaservices/osana)
 
-    Soon to be added:
-
-  - [Aero](https://github.com/proxyhaven/aero)
+---
 
 - Basic Password protection for the website (you can set a password in the settings page)
 
@@ -217,6 +214,12 @@ Need to use a custom network? Uncomment the networks section and change the name
 - Easy to use clean UI/UX
 
 - Easy to self host
+
+- Tab cloaking
+
+- Multithreading for performance
+
+- **NEW:** Off click cloaking (make the tab look like a Google search when you are doing something else)
 
 - And more!
 
@@ -245,3 +248,7 @@ For more support join Our Discord!
   Discord](https://invidget.switchblade.xyz/hzCjSFQeeZ?theme=dark)](https://discord.gg/hzCjSFQeeZ)
 
 </center>
+
+## Commit Activity
+
+![Alt](https://repobeats.axiom.co/api/embed/ebe65662fb02989a2be94c965f41301cd8306047.svg "Repobeats analytics image")
