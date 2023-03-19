@@ -17,7 +17,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/Ruby-Network/ruby-docs/tree/main",
   footer: {
-    text: "&copy; 2021 Ruby Network",
+    text: "© 2023 Ruby Network",
   },
 
   useNextSeoProps() {
