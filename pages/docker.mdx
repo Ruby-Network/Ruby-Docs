@@ -1,6 +1,6 @@
-## Docker Images
+# Docker Images
 
-# First you need to have docker and docker-compose installed
+## Install Docker & Docker-Compose
 
 theses are the steps to install docker and docker-compose on debian
 note that if you are using any other distro that isn't based off of debian you should find the instructions here if you use ubuntu or any other distros [here](https://docs.docker.com/engine/install/)
@@ -161,3 +161,263 @@ Now we can run the container
 ```bash
 docker-compose up -d
 ```
+
+## Ludicrous
+
+The Ludicrous Web Proxy Site: Fast, Simple, Small. The flagship site of Ludicrous.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/ludicrous/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  ludicrous:
+    restart: unless-stopped
+    image: "motortruck1221/ludicrous"
+    ports:
+      #IMPORTANT: CHANGE <your port here> to the port you want removing the <> around it. DO NOT UNDER ANY CIRCUMSTANCES CHANGE :1234!
+      - <your port here>:1234
+# network config if youi want a network config feel free to use the one below and change the name to your liking. YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
+#networks:
+#  default:
+#    external:
+#      name: default
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+docker-compose up -d
+```
+
+## Website-AIO
+
+All-in-one Holy Unblocker bundle.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/website-aio/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  website-aio:
+    restart: unless-stopped
+    image: "ghcr.io/natant-network/website-aio-docker:master"
+    ports:
+      #IMPORTANT: DO NOT CHANGE THE 8080 PART ONLY CHANGE THE 90 PART
+      - 90:8080
+# network config if youi want a network config feel free to use the one below and change the name to your liking. YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
+#networks:
+#  default:
+#    external:
+#      name: default
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+docker-compose up -d
+```
+
+## Abyss Browser
+
+Abyss with tabs.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/abyss-browser/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  abyss-browser:
+    restart: unless-stopped
+    image: "ghcr.io/natant-network/abyss-browser-docker:main"
+    ports:
+      #IMPORTANT: DO NOT CHANGE THE 8090 PART ONLY CHANGE THE 90 PART
+      - 90:8090
+# network config if youi want a network config feel free to use the one below and change the name to your liking. YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
+#networks:
+#  default:
+#    external:
+#      name: default
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+
+docker-compose up -d
+```
+
+## webOS
+
+TerbiumOS web is a web os packed with features, with more to come every update.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/webOS/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  terbium:
+    restart: unless-stopped
+    image: "ghcr.io/natant-network/webos-docker:main"
+    ports:
+      #IMPORTANT: DO NOT CHANGE THE 6969 PART ONLY CHANGE THE 90 PART
+      - 90:6969
+# network config if youi want a network config feel free to use the one below and change the name to your liking. YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
+#networks:
+#  default:
+#    external:
+#      name: default
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+docker-compose up -d
+```
+
+## Metallic
+
+A powerful web proxy build for speed and customization.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/metallic/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  metallic:
+    restart: unless-stopped
+    image: "ghcr.io/natant-network/metallic-docker:main"
+    ports:
+      #IMPORTANT: DO NOT CHANGE 8080!
+      - <your port here>:8080
+# network config if youi want a network config feel free to use the one below and change the name to your liking. YOU MUST RUN docker network create <your name> BEFORE RUNNING THE CONTAINER
+#networks:
+#  default:
+#    external:
+#      name: default
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+docker-compose up -d
+```
+
+## Ruby
+
+Ruby is a fast, lightweight, and powerful web browser.
+
+Now we just do what we did for incognito but we need to change a few commands
+
+```bash
+cd ~/docker-images/ruby/
+```
+
+Now lets make the docker-compose.yml file
+
+```bash
+nano docker-compose.yml
+```
+
+now copy and paste this into the file
+
+```yaml
+version: "2"
+services:
+  ruby:
+    restart: unless-stopped
+    image: "ghcr.io/ruby-network/ruby:main"
+    ports:
+      - <your port here>:8080
+    #ADVANCED ITEMS BELOW
+    #     - ${PORT}:8080
+    #env_file:
+    #     - .env.docker
+    #environment:
+    #     - URL=${URL}
+#networks:
+#  default:
+#    external:
+#      name: default_net
+```
+
+Save the file and exit
+
+Now we can run the container
+
+```bash
+docker-compose up -d
+```
+
+Now you should be able to host all of these docker containers with ease. If you have any questions feel free to ask in the discord server.

@@ -1,7 +1,10 @@
 {
   "index": "Introduction",
   "hosting": "VPS Hosting",
+  "caddy": "Caddy",
   "NPM": "NPM",
   "Ruby": "Ruby",
-  "docker": "Docker Sites"
+  "docker": "Docker Sites",
+  "linkmaster": "Link Master",
+  "aniflame": "Aniflame"
 }
