@@ -1,3 +1,5 @@
+import { Tab, Tabs } from 'nextra-theme-docs';
+
 <div align="center">
 
 [![Banner](https://socialify.git.ci/ruby-network/ruby/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)](https://github.com/Ruby-Network/ruby)
@@ -57,19 +59,15 @@ This is our second edition of [Ruby](https://github.com/ruby-network/ruby-v1). T
 - Clone the repository
 
 ```bash
-$ git clone https://github.com/ruby-network/ruby.git
+git clone https://github.com/ruby-network/ruby.git
 ```
 
 - Install the dependencies
 
-```bash
-$ yarn
-```
-
 - make a copy of the `.env.example` file and rename it to `.env`
 
 ```bash
-$ cp .env.example .env
+cp .env.example .env
 ```
 
 - Edit the `.env` file and change the `URL` to the url you want to use (leave blank to disable)
@@ -77,9 +75,18 @@ $ cp .env.example .env
 - If you just want to use the default settings you can skip this step
 - Start the server
 
-```bash
-$ yarn prod
-```
+<Tabs items={['npm', 'yarn']}>
+  <Tab>
+    ```bash
+    npm run prod
+    ```
+  </Tab>
+  <Tab>
+    ```bash
+    yarn prod
+    ```
+  </Tab>
+</Tabs>
 
 - Open your browser and go to `localhost:8080`
 
