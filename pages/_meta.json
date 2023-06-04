@@ -1,7 +1,9 @@
 {
-  "index": "Introduction",
-  "hosting": "VPS Hosting",
+  "index": "My Homepage",
   "caddy": "Caddy",
-  "NPM": "NPM",
-  "Services": "Services"
+  "npm": "NPM",
+  "hosting": "VPS Hosting",
+  "dns": "DNS",
+  "portainer": "Portainer",
+  "services": "Services"
 }
